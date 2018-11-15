@@ -75,7 +75,6 @@ span {
           justify-content: flex-end;
 }
 
-/* FORMA  */
 .container {
   background: rgba(0, 0, 0, 0.6);
   width: 40%;
@@ -181,6 +180,36 @@ h1 {
   border-radius: 4px;
   margin-top: 25px;
   cursor: pointer;
+  -webkit-animation-name: rainbow;
+          animation-name: rainbow;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-color: #60b5ed;
+  }
+  30% {
+    background-color: #999fff;
+  }
+  75% {
+    background-color: #1B5288;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: #60b5ed;
+  }
+  30% {
+    background-color: #999fff;
+  }
+  75% {
+    background-color: #1B5288;
+  }
 }
 
 .account:hover {

@@ -75,7 +75,7 @@ span{
   justify-content: flex-end;
 }
 
-/* FORMA  */
+
 
 .container{
   background: rgba(0, 0, 0, 0.6);
@@ -181,8 +181,22 @@ h1{
   border-radius: 4px;
   margin-top: 25px;
   cursor: pointer;
+  animation-name: rainbow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes rainbow {
+  0% {
+    background-color: #60b5ed;
+  }
+  30% {
+    background-color: #999fff;
+  }
+  75% {
+    background-color: #1B5288; 
+  }
+}
 .account:hover{
   background-color: #1B5288;
 }
