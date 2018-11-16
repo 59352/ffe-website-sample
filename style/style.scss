@@ -25,7 +25,16 @@ ul.menu2{
   line-height: 20px;
   padding-right: 5px; 
 }
-
+.menu1 li a:hover {
+  animation-name: background-color;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+@keyframes background-color {
+  100% {
+    background-color: #115794;
+  }
+}
 ul.menu1 {
   border-right: 1px solid #3E89C5;
 }
@@ -97,6 +106,7 @@ h1{
   display: block;
   margin: auto;
   padding-bottom: 15px;
+  
 }
 
 .or{
@@ -141,6 +151,7 @@ h1{
 
 .d-input{
   padding: 5px;
+  
 }
 
 .i-input{
@@ -151,6 +162,7 @@ h1{
   width: 262px;
   height: 20px;
   border: none;
+  
 }
 
  .i-input::-webkit-input-placeholder{
@@ -214,4 +226,11 @@ h1{
   color: #cccccc;
   line-height: 15px;
   padding-top: 25px;
+}
+
+}
+h1:hover {
+  transition: 1s;
+  font-size: 20px;
+  color: lightpink;
 }
